@@ -4,11 +4,11 @@ const project = require("../../controllers/project-controller");
 // =====================================
 //     /api/project   ==================
 // =====================================
-router.route("/")
+router.route("https://jumble-dash.herokuapp.com/")
   .get(project.findAll)
   .post(project.create);
 
-router.route("/:id")
+router.route("https://jumble-dash.herokuapp.com/:id")
     .get(project.findOne)
     .put(project.update)
     .delete(project.remove);

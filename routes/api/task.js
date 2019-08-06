@@ -4,10 +4,10 @@ const task = require("../../controllers/task-controller");
 // =====================================
 //     /api/task   =====================
 // =====================================
-router.route("/")
+router.route("https://jumble-dash.herokuapp.com/")
   .post(task.create);
 
-router.route("/:id")
+router.route("https://jumble-dash.herokuapp.com/:id")
     .get(task.findAll)
     .put(task.update)
     .delete(task.remove);

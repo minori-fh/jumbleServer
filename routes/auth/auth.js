@@ -6,7 +6,7 @@ const passport = require('passport');
 // =====================================
 
 // process the login form
-router.post('/signin', (req, res, next) => {
+router.post('https://jumble-dash.herokuapp.com/signin', (req, res, next) => {
   passportAuthenticate('local-login', req, res, next);
 });
 
@@ -15,7 +15,7 @@ router.post('/signin', (req, res, next) => {
 // =====================================
 
 // process the signup form
-router.post('/signup', (req, res, next) => {
+router.post('https://jumble-dash.herokuapp.com/signup', (req, res, next) => {
   passportAuthenticate('local-signup', req, res, next);
 });
 
@@ -52,7 +52,7 @@ passportAuthenticate = (localStrategy, req, res, next) => {
 // =====================================
 // LOGOUT ==============================
 // =====================================
-router.get('/logout', (req, res) => {
+router.get('https://jumble-dash.herokuapp.com/logout', (req, res) => {
      req.session.destroy(err => {
       if(err) throw err
       req.logout();
@@ -66,7 +66,7 @@ router.get('/logout', (req, res) => {
 // =====================================
 // Auth Validation =====================
 // =====================================
-router.get('/auth', (req, res)=> {
+router.get('https://jumble-dash.herokuapp.com/auth', (req, res)=> {
   let auth = req.isAuthenticated();
   res.json(auth);
 });
