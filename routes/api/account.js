@@ -4,7 +4,7 @@ const accountController = require("../../controllers/account-controller");
 // =====================================
 //    /api/account   ===================
 // =====================================
-router.route("https://jumble-dash.herokuapp.com/")
+router.route("/")
   .get(accountController.find)
   .post(accountController.create)
   .put(accountController.update)

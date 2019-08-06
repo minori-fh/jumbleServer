@@ -4,7 +4,7 @@ const assignee = require("../../controllers/assignee-controller");
 // =====================================
 //     /api/assignee   =================
 // =====================================
-router.route("https://jumble-dash.herokuapp.com/")
+router.route("/")
     .post(assignee.create);
 
 router.route("/:id")

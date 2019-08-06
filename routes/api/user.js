@@ -4,7 +4,7 @@ const userController = require("../../controllers/user-controller");
 // =====================================
 //     /api/user   =====================
 // =====================================
-router.route("https://jumble-dash.herokuapp.com/")
+router.route("/")
   .get(userController.find)
   .put(userController.update)
   .delete(userController.delete);

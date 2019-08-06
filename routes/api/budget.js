@@ -4,7 +4,7 @@ const budget = require("../../controllers/budget-controller");
 // =====================================
 //     /api/budget   ===================
 // =====================================
-router.route("https://jumble-dash.herokuapp.com/")
+router.route("/")
   .post(budget.create);
 
 router.route("/:id")
